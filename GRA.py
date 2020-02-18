@@ -120,7 +120,7 @@ print(DataFrameTransposed)
 Counting = len(DataFrameTransposed.index)
 y_pos = np.arange(Counting)
 performance = DataFrameTransposed['RANK']
-plt.scatter(y_pos,performance)
+plt.bar(y_pos,performance, color='orange' )
 plt.ylabel('RANKS')
 plt.title('Grey Relational Grade')
 plt.savefig('GRA')
